@@ -1,7 +1,6 @@
 PRAGMA foreign_keys = ON;
 
 DROP TABLE IF EXISTS historico_status;
-DROP TABLE IF EXISTS dependencia_tarefa;
 DROP TABLE IF EXISTS tarefa;
 DROP TABLE IF EXISTS adulto;
 DROP TABLE IF EXISTS secao;
@@ -36,16 +35,6 @@ CREATE TABLE tarefa (
     data_criacao DATETIME DEFAULT CURRENT_TIMESTAMP,
     FOREIGN KEY (id_responsavel) REFERENCES adulto(id_adulto),
     FOREIGN KEY (id_secao) REFERENCES secao(id_secao)
-);
-
-CREATE TABLE dependencia_tarefa (
-    id_dependencia INTEGER PRIMARY KEY AUTOINCREMENT,
-    id_tarefa INTEGER NOT NULL,
-    id_tarefa_dependente INTEGER NOT NULL,
-    FOREIGN KEY (id_tarefa) REFERENCES tarefa(id_tarefa),
-    FOREIGN KEY (id_tarefa_dependente) REFERENCES tarefa(id_tarefa),
-    UNIQUE (id_tarefa, id_tarefa_dependente),
-    CHECK (id_tarefa <> id_tarefa_dependente)
 );
 
 CREATE TABLE historico_status (
