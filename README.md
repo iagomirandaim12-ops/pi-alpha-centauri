@@ -6,8 +6,8 @@ Sistema web desenvolvido para o Projeto Integrador da UNIVESP, com foco na gest�
 
 Desenvolver uma aplicação web para:
 
-- cadastrar, consultar, atualizar e excluir adultos voluntários;
-- cadastrar, consultar, atualizar e excluir seções;
+- cadastrar, consultar e excluir adultos voluntários pela interface;
+- cadastrar, consultar e excluir seções pela interface;
 - cadastrar tarefas;
 - atribuir responsáveis às tarefas;
 - vincular tarefas às seções;
@@ -15,7 +15,6 @@ Desenvolver uma aplicação web para:
 - registrar histórico de alterações de status;
 - controlar dependências entre tarefas;
 - exibir dashboard de acompanhamento.
-
 
 ## Estrutura do repositório
 
@@ -60,6 +59,8 @@ Essa separação demonstra o funcionamento básico de aplicações web modernas,
 
 O frontend foi desenvolvido com React, HTML, CSS e JavaScript, permitindo a construção de uma interface dinâmica para cadastro, listagem e acompanhamento das tarefas dos adultos voluntários do grupo escoteiro.
 
+A interface também permite o cadastro e a listagem de adultos voluntários e seções, facilitando a organização dos responsáveis e das áreas vinculadas às tarefas.
+
 ### Backend
 
 O backend foi desenvolvido com Node.js e Express, sendo responsável por organizar as regras de acesso aos dados e disponibilizar as rotas da aplicação, como tarefas, adultos voluntários, seções e dashboard.
@@ -73,7 +74,8 @@ O uso de chaves primárias, chaves estrangeiras e restrições de validação de
 ### Operações CRUD
 
 O sistema contempla operações de cadastro, consulta, atualização e exclusão de informações relacionadas a tarefas, adultos voluntários e seções. Essas operações representam o conceito de CRUD, fundamental no desenvolvimento de sistemas web com banco de dados.
-No backend, foram implementadas rotas específicas para gerenciamento de tarefas, adultos voluntários, seções e dashboard, demonstrando a comunicação entre aplicação web, servidor e banco de dados.
+
+No frontend, foram implementados formulários para cadastro de tarefas, adultos voluntários e seções. No backend, foram implementadas rotas específicas para gerenciamento de tarefas, adultos voluntários, seções e dashboard, demonstrando a comunicação entre aplicação web, servidor e banco de dados.
 
 ### Rastreabilidade
 
