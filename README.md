@@ -6,12 +6,13 @@ Sistema web desenvolvido para o Projeto Integrador da UNIVESP, com foco na gest�
 
 Desenvolver uma aplicação web para:
 
-- cadastrar adultos voluntários;
-- cadastrar seções;
+- consultar adultos voluntários cadastrados;
+- consultar seções do grupo escoteiro;
 - cadastrar tarefas;
-- atribuir responsáveis;
+- atribuir responsáveis às tarefas;
+- vincular tarefas às seções;
 - controlar prazos, prioridades e status;
-- registrar histórico de alterações;
+- registrar histórico de alterações de status;
 - controlar dependências entre tarefas;
 - exibir dashboard de acompanhamento.
 
