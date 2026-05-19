@@ -6,8 +6,8 @@ Sistema web desenvolvido para o Projeto Integrador da UNIVESP, com foco na gest�
 
 Desenvolver uma aplicação web para:
 
-- consultar adultos voluntários cadastrados;
-- consultar seções do grupo escoteiro;
+- cadastrar, consultar, atualizar e excluir adultos voluntários;
+- cadastrar, consultar, atualizar e excluir seções;
 - cadastrar tarefas;
 - atribuir responsáveis às tarefas;
 - vincular tarefas às seções;
@@ -15,6 +15,7 @@ Desenvolver uma aplicação web para:
 - registrar histórico de alterações de status;
 - controlar dependências entre tarefas;
 - exibir dashboard de acompanhamento.
+
 
 ## Estrutura do repositório
 
@@ -71,7 +72,8 @@ O uso de chaves primárias, chaves estrangeiras e restrições de validação de
 
 ### Operações CRUD
 
-O sistema contempla operações de cadastro, consulta, atualização e exclusão de informações, especialmente relacionadas às tarefas. Essas operações representam o conceito de CRUD, fundamental no desenvolvimento de sistemas web com banco de dados.
+O sistema contempla operações de cadastro, consulta, atualização e exclusão de informações relacionadas a tarefas, adultos voluntários e seções. Essas operações representam o conceito de CRUD, fundamental no desenvolvimento de sistemas web com banco de dados.
+No backend, foram implementadas rotas específicas para gerenciamento de tarefas, adultos voluntários, seções e dashboard, demonstrando a comunicação entre aplicação web, servidor e banco de dados.
 
 ### Rastreabilidade
 
