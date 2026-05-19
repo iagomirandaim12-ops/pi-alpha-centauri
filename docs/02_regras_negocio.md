@@ -19,25 +19,13 @@ As prioridades permitidas são:
 - Alta
 - Crítica
 
-## RN04 — Dependência entre tarefas
-Uma tarefa pode depender da conclusão de outra.
+## RN04 — Tarefa impedida
+Uma tarefa pode ser marcada como "Impedida".
 
-Exemplo:
-
-A tarefa "Organizar cozinha do acampamento" depende da tarefa "Comprar alimentos do acampamento".
-
-## RN05 — Tarefa impedida
-Caso uma tarefa predecessora não esteja concluída, a tarefa dependente pode ser marcada como "Impedida".
-
-## RN06 — Histórico
-Toda alteração de status deve gerar registro no histórico.
-
-## RN07 — Rastreabilidade
+## RN05 — Rastreabilidade
 O sistema deve permitir saber:
 
 - quem recebeu a tarefa;
-- quando foi criada;
 - qual o prazo;
 - qual o status atual;
-- quais alterações ocorreram;
 - quais tarefas estão impedidas.
