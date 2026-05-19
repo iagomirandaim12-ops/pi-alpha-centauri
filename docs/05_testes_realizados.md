@@ -168,15 +168,15 @@ As ações realizadas na interface devem refletir corretamente nas rotas da API 
 
 **Procedimento:**
 
-1. Enviar uma requisição `POST` para a rota `/secoes`, cadastrando uma nova seção.
-2. Verificar se a seção aparece na listagem por meio da rota `GET /secoes`.
-3. Enviar uma requisição `PUT` para a rota `/secoes/:id`, alterando o nome da seção cadastrada.
-4. Verificar se a alteração aparece corretamente na listagem.
-5. Enviar uma requisição `DELETE` para a rota `/secoes/:id`, removendo a seção de teste.
+1. Cadastrar uma nova seção pela interface do sistema.
+2. Verificar se a seção aparece na listagem de seções.
+3. Verificar se a nova seção aparece nos campos de seleção usados no cadastro de adultos e tarefas.
+4. Testar a atualização e exclusão da seção por meio das rotas da API.
+5. Confirmar que a seção removida não aparece mais na listagem.
 
 **Resultado esperado:**
 
-O sistema deve permitir cadastrar, listar, atualizar e excluir seções, desde que não existam adultos ou tarefas vinculados a elas.
+O sistema deve permitir cadastrar seções pela interface e listar as seções disponíveis para vinculação com adultos e tarefas. A API também deve permitir atualizar e excluir seções, desde que não existam adultos ou tarefas vinculados a elas.
 
 **Status:** Aprovado.
 
@@ -184,26 +184,21 @@ O sistema deve permitir cadastrar, listar, atualizar e excluir seções, desde q
 
 ## Teste 12 — Cadastro, edição e exclusão de adultos voluntários
 
+## Teste 12 — Cadastro, edição e exclusão de adultos voluntários
+
 **Procedimento:**
 
-1. Enviar uma requisição `POST` para a rota `/adultos`, cadastrando um novo adulto voluntário.
-2. Verificar se o adulto aparece na listagem por meio da rota `GET /adultos`.
-3. Enviar uma requisição `PUT` para a rota `/adultos/:id`, alterando os dados do adulto cadastrado.
-4. Verificar se a alteração aparece corretamente na listagem.
-5. Enviar uma requisição `DELETE` para a rota `/adultos/:id`, removendo o adulto de teste.
+1. Cadastrar um novo adulto voluntário pela interface do sistema.
+2. Verificar se o adulto aparece na listagem de adultos voluntários.
+3. Verificar se o novo adulto aparece no campo de responsável do cadastro de tarefas.
+4. Testar a atualização e exclusão do adulto por meio das rotas da API.
+5. Confirmar que o adulto removido não aparece mais na listagem.
 
 **Resultado esperado:**
 
-O sistema deve permitir cadastrar, listar, atualizar e excluir adultos voluntários, desde que não existam tarefas vinculadas a eles.
+O sistema deve permitir cadastrar adultos voluntários pela interface e listar os responsáveis disponíveis para vinculação com tarefas. A API também deve permitir atualizar e excluir adultos voluntários, desde que não existam tarefas vinculadas a eles.
 
 **Status:** Aprovado.
-
-**Resultado esperado:**
-
-As tarefas devem ser exibidas com o nome do responsável e da seção correspondente, demonstrando o relacionamento entre as tabelas.
-
-**Status:** Aprovado.
-
 ---
 
 ## Conclusão dos testes
