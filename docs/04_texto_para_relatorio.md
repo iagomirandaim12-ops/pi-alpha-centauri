@@ -8,7 +8,7 @@ O backend foi desenvolvido com Node.js e Express, sendo responsável por disponi
 
 O frontend foi desenvolvido com React, HTML, CSS e JavaScript, priorizando uma interface simples e objetiva para cadastro, listagem e acompanhamento dos dados. A interface permite cadastrar seções, cadastrar adultos voluntários, cadastrar tarefas, alterar status de tarefas, excluir registros e acompanhar o resumo das atividades pelo dashboard.
 
-O banco de dados relacional foi modelado para contemplar seções, adultos voluntários, tarefas, dependências entre tarefas e histórico de alterações de status. Essa estrutura permite relacionar tarefas aos responsáveis e às seções, além de registrar a evolução das atividades ao longo do tempo.
+O banco de dados relacional foi modelado para contemplar seções, adultos voluntários, tarefas e histórico de alterações de status. Essa estrutura permite relacionar tarefas aos responsáveis e às seções, além de registrar a evolução das atividades ao longo do tempo.
 
 A estrutura adotada permite demonstrar conceitos importantes de aplicações web, como arquitetura cliente-servidor, uso de rotas, comunicação entre interface e servidor, persistência de dados e organização das informações em tabelas relacionadas.
 
