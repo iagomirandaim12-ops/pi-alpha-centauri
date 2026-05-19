@@ -13,7 +13,6 @@ Desenvolver uma aplicação web para:
 - vincular tarefas às seções;
 - controlar prazos, prioridades e status;
 - registrar histórico de alterações de status;
-- controlar dependências entre tarefas;
 - exibir dashboard de acompanhamento.
 
 ## Estrutura do repositório
@@ -67,7 +66,7 @@ O backend foi desenvolvido com Node.js e Express, sendo responsável por organiz
 
 ### Banco de dados relacional
 
-O projeto utiliza banco de dados relacional SQLite. Foram criadas tabelas para armazenar seções, adultos voluntários, tarefas, dependências entre tarefas e histórico de alterações de status.
+O projeto utiliza banco de dados relacional SQLite. Foram criadas tabelas para armazenar seções, adultos voluntários, tarefas e histórico de alterações de status.
 
 O uso de chaves primárias, chaves estrangeiras e restrições de validação demonstra a aplicação de conceitos de modelagem de dados relacional e SQL.
 
