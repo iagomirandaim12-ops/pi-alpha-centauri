@@ -162,6 +162,42 @@ As ações realizadas na interface devem refletir corretamente nas rotas da API 
 1. Cadastrar tarefas vinculadas a responsáveis e seções existentes.
 2. Verificar se os dados aparecem corretamente na listagem.
 
+---
+
+## Teste 11 — Cadastro, edição e exclusão de seções
+
+**Procedimento:**
+
+1. Enviar uma requisição `POST` para a rota `/secoes`, cadastrando uma nova seção.
+2. Verificar se a seção aparece na listagem por meio da rota `GET /secoes`.
+3. Enviar uma requisição `PUT` para a rota `/secoes/:id`, alterando o nome da seção cadastrada.
+4. Verificar se a alteração aparece corretamente na listagem.
+5. Enviar uma requisição `DELETE` para a rota `/secoes/:id`, removendo a seção de teste.
+
+**Resultado esperado:**
+
+O sistema deve permitir cadastrar, listar, atualizar e excluir seções, desde que não existam adultos ou tarefas vinculados a elas.
+
+**Status:** Aprovado.
+
+---
+
+## Teste 12 — Cadastro, edição e exclusão de adultos voluntários
+
+**Procedimento:**
+
+1. Enviar uma requisição `POST` para a rota `/adultos`, cadastrando um novo adulto voluntário.
+2. Verificar se o adulto aparece na listagem por meio da rota `GET /adultos`.
+3. Enviar uma requisição `PUT` para a rota `/adultos/:id`, alterando os dados do adulto cadastrado.
+4. Verificar se a alteração aparece corretamente na listagem.
+5. Enviar uma requisição `DELETE` para a rota `/adultos/:id`, removendo o adulto de teste.
+
+**Resultado esperado:**
+
+O sistema deve permitir cadastrar, listar, atualizar e excluir adultos voluntários, desde que não existam tarefas vinculadas a eles.
+
+**Status:** Aprovado.
+
 **Resultado esperado:**
 
 As tarefas devem ser exibidas com o nome do responsável e da seção correspondente, demonstrando o relacionamento entre as tabelas.
@@ -172,6 +208,8 @@ As tarefas devem ser exibidas com o nome do responsável e da seção correspond
 
 ## Conclusão dos testes
 
-Os testes manuais demonstraram que o sistema atende às principais funcionalidades previstas para o Projeto Integrador, permitindo o cadastro, acompanhamento, atualização e exclusão de tarefas.
+## Conclusão dos testes
 
-A aplicação apresenta integração entre frontend, backend e banco de dados, demonstrando os conceitos de aplicação web, arquitetura cliente-servidor, banco de dados relacional, SQL e operações CRUD.
+Os testes manuais demonstraram que o sistema atende às principais funcionalidades previstas para o Projeto Integrador, permitindo o cadastro, consulta, atualização e exclusão de tarefas, seções e adultos voluntários.
+
+A aplicação apresenta integração entre frontend, backend e banco de dados, demonstrando os conceitos de aplicação web, arquitetura cliente-servidor, banco de dados relacional, SQL, rotas de API e operações CRUD.
