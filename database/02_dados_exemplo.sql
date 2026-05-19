@@ -19,13 +19,6 @@ VALUES
 ('Planejar atividade de campo', 'Definir roteiro e materiais da atividade.', '2026-05-20', 'Alta', 'Em andamento', 'Pontual', 2, 2),
 ('Registrar conclusão da atividade', 'Gerar histórico e relatório final.', '2026-05-25', 'Baixa', 'Pendente', 'Pontual', 1, 5);
 
-INSERT INTO dependencia_tarefa (id_tarefa, id_tarefa_dependente)
 VALUES
 (2, 1);
 
-INSERT INTO historico_status (id_tarefa, status_anterior, status_novo, observacao) VALUES
-(1, NULL, 'Pendente', 'Tarefa criada.'),
-(2, NULL, 'Impedida', 'Depende da compra dos alimentos.'),
-(3, NULL, 'Pendente', 'Tarefa recorrente mensal.'),
-(4, NULL, 'Em andamento', 'Planejamento iniciado.'),
-(5, NULL, 'Pendente', 'Aguardando conclusão da atividade.');
