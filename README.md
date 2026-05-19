@@ -26,12 +26,23 @@ pi-alpha-centauri/
 └── README.md
 ```
 
-## Tecnologias sugeridas
+## Tecnologias utilizadas
 
 - Frontend: React + Vite
 - Backend: Node.js + Express
 - Banco de dados: SQLite
 - Versionamento: Git/GitHub
+
+## Documentação do projeto
+
+A documentação complementar do projeto está organizada na pasta `docs`:
+
+- [DER conceitual](docs/01_der_conceitual.md): apresenta a modelagem conceitual do banco de dados.
+- [Regras de negócio](docs/02_regras_negocio.md): descreve as principais regras do sistema.
+- [Roteiro de desenvolvimento](docs/03_roteiro_de_desenvolvimento.md): organiza as etapas previstas para construção do projeto.
+- [Texto base para o relatório final](docs/04_texto_para_relatorio.md): contém uma base textual para elaboração do relatório acadêmico.
+- [Testes realizados](docs/05_testes_realizados.md): registra os testes manuais feitos durante o desenvolvimento.
+- [Deploy e publicação](docs/06_deploy_publicacao.md): apresenta uma proposta de publicação futura da aplicação.
 
 ## Aderência aos conceitos do Projeto Integrador
 
@@ -71,11 +82,15 @@ O projeto está versionado com Git e armazenado no GitHub, permitindo o acompanh
 
 ### Testes e validação
 
-A validação do sistema será feita por meio de testes manuais, verificando o cadastro de tarefas, listagem, alteração de status, exclusão, funcionamento do dashboard e consistência das informações armazenadas no banco de dados.
+A validação do sistema foi realizada por meio de testes manuais, verificando o cadastro de tarefas, listagem, alteração de status, exclusão, funcionamento do dashboard e consistência das informações armazenadas no banco de dados.
+
+Os testes realizados foram documentados na pasta `docs`, permitindo demonstrar a validação das funcionalidades implementadas.
 
 ### Possibilidade de deploy
 
 O projeto foi estruturado para execução local durante o desenvolvimento e pode ser futuramente publicado em um servidor web, permitindo o acesso por outros usuários pela internet.
+
+A documentação de deploy apresenta uma proposta de publicação futura da aplicação, considerando a separação entre frontend, backend e banco de dados.
 
 ## Como executar o projeto
 
@@ -121,17 +136,6 @@ Depois:
 
 ```text
 02_dados_exemplo.sql
-```
-
-## Sugestão de commits
-
-```bash
-git add .
-git commit -m "feat: criar estrutura inicial do projeto"
-git commit -m "feat: adicionar schema do banco de dados"
-git commit -m "feat: implementar backend inicial"
-git commit -m "feat: implementar frontend inicial"
-git commit -m "docs: adicionar documentação do projeto"
 ```
 
 ## Status do projeto
